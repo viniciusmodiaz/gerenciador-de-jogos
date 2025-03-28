@@ -26,4 +26,11 @@ class TimeRepository
         
         return $data;
     }
+
+    public function allUrls()
+    {
+        $data = $this->time->whereNotNull('url')->where('id', 2717)->get();
+
+        return $data;
+    }
 }
